@@ -10,6 +10,7 @@ const AnswerOptions = ({ options, answer, whenAnswerSelected, type }) => {
           onClick={whenAnswerSelected}
           checked={type === answer}
           value={type}
+          disabled={answer}
         >
           {options}
         </button>
