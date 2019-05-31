@@ -1,0 +1,6 @@
+.resultStatus {
+  text-align: center;
+  border: 2px solid blue;
+  font-weight: bold;
+  font-size: 80px;
+}

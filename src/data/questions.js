@@ -3,10 +3,10 @@ export default [
     question: "What is the most important to you?",
     id: 1,
     answers: [
-      { type: "Stark", content: "Family" },
-      { type: "Lannister", content: "Power" },
-      { type: "Targaryen", content: "Revenge" },
-      { type: "Tyrell", content: "Money" }
+      { type: "Stark", availableOption: "Family" },
+      { type: "Lannister", availableOption: "Power" },
+      { type: "Targaryen", availableOption: "Revenge" },
+      { type: "Tyrell", availableOption: "Money" }
     ]
   },
 
@@ -14,10 +14,10 @@ export default [
     question: "Pick a colour",
     id: 2,
     answers: [
-      { type: "Stark", content: "Grey" },
-      { type: "Lannister", content: "Gold" },
-      { type: "Targaryen", content: "Red" },
-      { type: "Tyrell", content: "Orange" }
+      { type: "Stark", availableOption: "Grey" },
+      { type: "Lannister", availableOption: "Gold" },
+      { type: "Targaryen", availableOption: "Red" },
+      { type: "Tyrell", availableOption: "Orange" }
     ]
   },
 
@@ -25,10 +25,10 @@ export default [
     question: "Pick an animal",
     id: 3,
     answers: [
-      { type: "Stark", content: "Wolf" },
-      { type: "Lannister", content: "Lion" },
-      { type: "Targaryen", content: "Dragon" },
-      { type: "Tyrell", content: "None of these options" }
+      { type: "Stark", availableOption: "Wolf" },
+      { type: "Lannister", availableOption: "Lion" },
+      { type: "Targaryen", availableOption: "Dragon" },
+      { type: "Tyrell", availableOption: "None of these options" }
     ]
   },
 
@@ -36,10 +36,10 @@ export default [
     question: "Pick a house",
     id: 4,
     answers: [
-      { type: "Stark", content: "Tully" },
-      { type: "Lannister", content: "Frey" },
-      { type: "Targaryen", content: "Greyjoy" },
-      { type: "Tyrell", content: "Martell" }
+      { type: "Stark", availableOption: "Tully" },
+      { type: "Lannister", availableOption: "Frey" },
+      { type: "Targaryen", availableOption: "Greyjoy" },
+      { type: "Tyrell", availableOption: "Martell" }
     ]
   },
 
@@ -47,20 +47,20 @@ export default [
     question: "Who is your favourite family member?",
     id: 5,
     answers: [
-      { type: "Stark", content: "Father" },
-      { type: "Lannister", content: "Sibling" },
-      { type: "Targaryen", content: "Pet" },
-      { type: "Tyrell", content: "Grandparent" }
+      { type: "Stark", availableOption: "Father" },
+      { type: "Lannister", availableOption: "Sibling" },
+      { type: "Targaryen", availableOption: "Pet" },
+      { type: "Tyrell", availableOption: "Grandparent" }
     ]
   },
   {
     question: "Pick your favourite character",
     id: 6,
     answers: [
-      { type: "Stark", content: "Arya" },
-      { type: "Lannister", content: "Cersei" },
-      { type: "Targaryen", content: "Daenerys" },
-      { type: "Tyrell", content: "Lady Olenna" }
+      { type: "Stark", availableOption: "Arya" },
+      { type: "Lannister", availableOption: "Cersei" },
+      { type: "Targaryen", availableOption: "Daenerys" },
+      { type: "Tyrell", availableOption: "Lady Olenna" }
     ]
   }
 ];

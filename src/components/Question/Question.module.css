@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-decoration: underline red;
+}
