@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 import Quiz from "../Quiz";
-// import data from "../../data/questions";
-// import Question from "../Question";
-// import Shuffle from "../Shuffle";
-// import Result from "../Result";
-// import AnswerOptions from "../Answer Options";
-
 import "./App.css";
 
 class App extends Component {

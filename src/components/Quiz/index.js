@@ -5,8 +5,6 @@ import Shuffle from "../Shuffle";
 import Result from "../Result";
 import AnswerOptions from "../Answer Options";
 
-// import "./App.css";
-
 class Quiz extends Component {
   constructor(props) {
     super(props);
