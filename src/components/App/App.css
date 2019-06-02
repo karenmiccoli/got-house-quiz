@@ -9,3 +9,41 @@
   color: white;
   text-align: center;
 }
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1%;
+}
+
+.banner {
+  height: 200px;
+  width: 200px;
+  margin: 0.5%;
+}
+
+.button {
+  width: 10%;
+  height: 100%;
+  margin-top: 3%;
+  margin-left: 45%;
+  background-color: rgba(255, 0, 0, 0.2);
+  box-shadow: 3px 1px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0s 1s;
+}
+
+.button:hover {
+  background-color: rgb(114, 224, 114);
+  transition: 0s;
+}
+
+.instructions {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
