@@ -117,8 +117,23 @@ class App extends Component {
     );
   }
 
+  playAgain = () => {
+    const shuffleAnswers = data.map(question => Shuffle(question.answers));
+    this.setState(() => ({
+      question: data[0].question,
+      answerOptions: shuffleAnswers[0],
+      answer: "",
+      questionID: 1,
+      answerCount: { Stark: 0, Targaryen: 0, Lannister: 0, Tyrell: 0 },
+      result: "",
+      description: ""
+    }));
+    this.renderQuiz();
+  };
+
   renderResult(chosenHouse) {
-    console.log("chose est", chosenHouse);
+    console.log("chosen house", chosenHouse);
+
     const { result } = this.state;
     if (result === "Stark") {
       return (
@@ -127,6 +142,7 @@ class App extends Component {
           description="You value honour and family just like the Starks of Winterfell. You are strong-minded and don't mind ruffling a few feathers. 
           Let's hope your future is as bright as Bran's and not as dreary as the fate of Catelyn and Robb!"
           video="https://media.giphy.com/media/3oge8jsFsuxymZ8hEY/giphy.mp4"
+          playAgain={this.playAgain}
         />
       );
     } else if (result === "Lannister") {
@@ -136,6 +152,7 @@ class App extends Component {
           description="Power is the most important thing you, much like the Lannisters in Game of Thrones. Keeping you family reputation and status mean everything to you. 
           Remember a true Lannister always pays his debts and is partial to a bit of wine!"
           video="https://media.giphy.com/media/13zZ0FyrgNWwLu/giphy.mp4"
+          playAgain={this.playAgain}
         />
       );
     } else if (result === "Tyrell") {
@@ -145,6 +162,7 @@ class App extends Component {
           description="You are quite savvy when it comes to your finances and being able to play the game. You are not scared to speak your mind, much like Lady Olenna (R.I.P). 
           Let's hope your future better than that of House Tyrell!"
           video="https://media.giphy.com/media/3oD3YGaZEu21s5ymYw/giphy.mp4"
+          playAgain={this.playAgain}
         />
       );
     } else if (result === "Targaryen") {
@@ -154,6 +172,7 @@ class App extends Component {
           description="Revenge and thirst for change drives you. Much like Dany, you are trying to make the world a better place. Before you burn and kills loads of innocents of course. 
           Let's hope you fare better than the Mad Queen and her dragons!"
           video="https://media.giphy.com/media/l41K3RWvl6gFjmLRe/giphy.mp4"
+          playAgain={this.playAgain}
         />
       );
     } else {
@@ -162,6 +181,7 @@ class App extends Component {
           result={result}
           description="Well this is confusing and makes no sense! Much like the last season on Game of Thrones ... "
           video="https://media.giphy.com/media/5MCJGNm0Btlu0/giphy.mp4"
+          playAgain={this.playAgain}
         />
       );
     }

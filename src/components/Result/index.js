@@ -1,7 +1,7 @@
 import React from "react";
 import css from "./Result.module.css";
 
-const Result = ({ result, description, video }) => {
+const Result = ({ result, description, video, playAgain }) => {
   return (
     <div className={css.container}>
       <header className={css.resultStatus}>
@@ -14,6 +14,9 @@ const Result = ({ result, description, video }) => {
       <video className={css.video} loop={true} autoPlay={true}>
         <source src={video} />
       </video>
+      <button className={css.button} onClick={playAgain}>
+        Play Again
+      </button>
     </div>
   );
 };

@@ -5,17 +5,14 @@
   text-align: center;
   height: 50%;
   width: 100%;
-  /* border: 2px solid orange; */
 }
 .resultStatus {
   text-align: center;
-  /* border: 2px solid blue; */
   font-weight: bold;
   font-size: 40px;
 }
 
 h3 {
-  /* text-decoration: underline red; */
   font-size: 70px;
   margin: 0;
 }
@@ -28,9 +25,27 @@ h3 {
 }
 
 .video {
-  /* border: 2px solid purple; */
   border-radius: 30px;
   margin-left: 1%;
+}
+
+.button {
+  width: 10%;
+  height: 100%;
+  margin-top: 3%;
+  margin-left: 45%;
+  background-color: rgba(255, 0, 0, 0.2);
+  box-shadow: 3px 1px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0s 1s;
+}
+
+.button:hover {
+  background-color: rgb(114, 224, 114);
+  transition: 0s;
 }
 
 /* .houseName {
