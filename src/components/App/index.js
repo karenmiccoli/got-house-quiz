@@ -34,19 +34,27 @@ class App extends Component {
                   className="banner"
                   src="./images/lannister.png"
                   alt="lannister"
+                  title="House Lannister"
                 />
-                <img className="banner" src="./images/stark.png" alt="stark" />
+                <img
+                  className="banner"
+                  src="./images/stark.png"
+                  alt="stark"
+                  title="House Stark"
+                />
               </div>
               <div className="rowTwo">
                 <img
                   className="banner"
                   src="./images/targaryen.jpg"
                   alt="targaryen"
+                  title="House Targaryen"
                 />
                 <img
                   className="banner"
                   src="./images/tyrell.jpg"
                   alt="tyrell"
+                  title="House Tyrell"
                 />
               </div>
               <button className="button" onClick={this.renderQuiz}>
